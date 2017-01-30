@@ -1,9 +1,23 @@
 <html>
 <head>
 	<title>Mars Rover Kata!</title>
-	<script type="text/javascript" src="rover.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
+	<div id="playable-area">
+		<img id="rover" src="rover.png" alt ="rover" width ="50px">
+	</div>
+	<b>You can use arrows on keyboard to control rover</b><br>
+	Happy Mars exploration!
+	<div class="controls">
+		<button id="forward">Forward</button><br>
+		<button id="left">Left</button>
+		<button id="right">Rigth</button><br>
+		<button id="backward">Backward</button><br>
+		<span id="position">Position : [5,5]</span><br>
+		<span id="direction">Direction : N</span><br>
+		<span id="warning"></span>
+	</div>
+	<script type="text/javascript" src="rover.js"></script>
 </body>
 </html>
